@@ -112,26 +112,26 @@ p {
 }
 
 body.sunny {
-    background: url('sunny.jpg') no-repeat center center fixed;
+    background: url('images/sunny.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 body.cloudy {
-    background: url('cloudy.jpg') no-repeat center center fixed;
+    background: url('images/cloudy.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 body.rainy {
-    background: url('rainy.jpg') no-repeat center center fixed;
+    background: url('images/rainy.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 body.snowy {
-    background: url('snowy.jpg') no-repeat center center fixed;
+    background: url('images/snowy.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 body.foggy {
-    background: url('foggy.jpg') no-repeat center center fixed;
+    background: url('images/foggy.jpg') no-repeat center center fixed;
     background-size: cover;
 }
