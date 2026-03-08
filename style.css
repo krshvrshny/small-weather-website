@@ -1,0 +1,137 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gainsboro;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    transition: background 0.5s ease; /* Smooth transition when changing the background */
+}
+
+.weatherForm {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Increased space between input and button */
+}
+
+.cityInput {
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 2px solid #1e90ff; /* Blue border to match the card theme */
+    border-radius: 25px; /* Rounded corners for a modern look */
+    width: 100%;
+    max-width: 400px; /* Max width for larger screens */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.cityInput:focus {
+    border-color: #1b73cb; /* Darker blue when focused */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Slightly larger shadow when focused */
+}
+
+button[type="submit"] {
+    padding: 15px 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners to match the input */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+button[type="submit"]:hover {
+    background-color: #1b73cb;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button[type="submit"]:active {
+    background-color: #1a69c3; /* Darker blue when button is pressed */
+    transform: scale(1); /* Return to original size */
+}
+
+.card {
+    background: transparent; /* Transparent background for the card */
+    border: 2px solid white; /* White border for the card */
+    padding: 20px; /* Adjust padding to fit the content better */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light shadow for visibility */
+    border-radius: 10px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descDisplay {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 7.5rem;
+}
+
+.errorDisplay {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+body.sunny {
+    background: url('sunny.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.cloudy {
+    background: url('cloudy.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.rainy {
+    background: url('rainy.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.snowy {
+    background: url('snowy.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.foggy {
+    background: url('foggy.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
